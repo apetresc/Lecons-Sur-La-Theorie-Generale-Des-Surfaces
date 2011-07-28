@@ -51,9 +51,14 @@ Yes! It's four volumes, totalling about 2,500 pages. At the moment, we're only f
 
 Sure. Just do all the text, and note that in your pull request. We'll find someone with more free time to do the TikZ for you.
 
+#### I want to help, but I don't know how to use Git and/or GitHub
+
+First of all, I think you're missing out on a valuable life skill and you'd be well-served by learning how to use these amazing tools. But either way, it doesn't matter -- I'll be happy to e-mail reviews out to you manually, and commit LaTeX for you. Just [contact me] [7] through e-mail and we'll work something out.
+
   [1]: http://miktex.org/   "MikTeX"
   [2]: http://www.tug.org/mactex/2011/   "MacTeX"
   [3]: http://www.archive.org/details/leconsurlagendes01darbrich "Original text"
   [4]: https://github.com/apetresc/Lecons-Sur-La-Theorie-Generale-Des-Surfaces/wiki/Style-Guide  "Style Guide"
   [5]: https://github.com/apetresc/Lecons-Sur-La-Theorie-Generale-Des-Surfaces/wiki/Reviewer-List  "Reviewer List"
   [6]: https://launchpad.net/rubber  "Rubber"
+  [7]: mailto:apetresc@gmail.com  "E-mail Adrian"
