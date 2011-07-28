@@ -3,13 +3,12 @@
 
 \textbf{13.} It remains to study in a detailed manner the solutions of systems of differential
 equations of the form:
-\begin{align}
-  \left\{\begin{array}{rl}
-    \displaystyle \frac{\d{\alpha}}{\d{t}}  =& \beta  r - \gamma q, \\\\
-    \displaystyle \frac{\d{\beta}}{\d{t}}   =& \gamma p - \alpha r, \\\\
-    \displaystyle \frac{\d{\gamma}}{\d{t}}  =& \alpha q - \beta p
-  \end{array}\right. \label{linear-ode}
-\end{align}
+\begin{empheq}[left=\empheqlbrace]{align}
+  \frac{\d{\alpha}}{\d{t}}  &= \beta  r - \gamma q, \nonumber \\
+  \frac{\d{\beta}}{\d{t}}   &= \gamma p - \alpha r, \label{linear-ode} \\
+  \frac{\d{\gamma}}{\d{t}}  &= \alpha q - \beta p   \nonumber
+\end{empheq}
+
 
 We have already encountered one of the fundamental properties of such a system: it admits a
 quadratic solution of the form
@@ -19,16 +18,15 @@ quadratic solution of the form
 for constant $C$, and the existance of this solution implies, as a corollary, a series of
 propositions which enables, in many cases, the solution of the entire system.
 
-Before beginning our study of \eqref{linear-ode}, we will first show that all systems of the form
-\begin{align}
-  \left\{\begin{array}{rl}
-    \displaystyle \frac{\d{\alpha}}{\d{t}} =& A\alpha + B\beta + C\gamma, \\\\
-    \displaystyle \frac{\d{\beta}}{\d{t}}  =& A'\alpha + B'\beta + C'\gamma, \\\\
-    \displaystyle \frac{\d{\gamma}}{\d{t}} =& A''\alpha + B''\beta + C''\gamma
-  \end{array}\right.
-\end{align}
+Before beginning our study of \eqref{linear-ode}, we will first show that all systems of the form:
+\begin{empheq}[left=\empheqlbrace]{align}
+    \displaystyle \frac{\d{\alpha}}{\d{t}} &= A\alpha + B\beta + C\gamma, \nonumber \\
+    \displaystyle \frac{\d{\beta}}{\d{t}}  &= A'\alpha + B'\beta + C'\gamma, \\
+    \displaystyle \frac{\d{\gamma}}{\d{t}} &= A''\alpha + B''\beta + C''\gamma \nonumber
+\end{empheq}
+
 where $A$, $B$, $C$ are functions of $t$, can be reduced to the form \eqref{linear-ode} whenever
-they have a quadratic solution of the form
+they have a quadratic solution of the form:
 \[
 \varphi(\alpha, \beta, \gamma) = D,
 \]
