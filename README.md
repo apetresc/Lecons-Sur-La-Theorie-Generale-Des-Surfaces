@@ -6,7 +6,7 @@ This project is an experiment in using GitHub for something slightly unusual. Th
 Technical Details
 =================
 
-The translated work is written with the LaTeX typesetting system, which is freely available for all platforms ([Windows] [1], [OS X] [2], and likely included with your favorite Linux distribution). The relevant stylesheets are in the `style/` subdirectory, and TikZ will be used for the numerous diagrams.
+The translated work is written with the LaTeX typesetting system, which is freely available for all platforms ([Windows] [1], [OS X] [2], and likely included with your favorite Linux distribution). The relevant stylesheets are in the `style/` subdirectory, and TikZ will be used for the numerous diagrams. The build process is a combination of make and [rubber] [6].
 
 How to Contribute
 =================
@@ -56,3 +56,4 @@ Sure. Just do all the text, and note that in your pull request. We'll find someo
   [3]: http://www.archive.org/details/leconsurlagendes01darbrich "Original text"
   [4]: https://github.com/apetresc/Lecons-Sur-La-Theorie-Generale-Des-Surfaces/wiki/Style-Guide  "Style Guide"
   [5]: https://github.com/apetresc/Lecons-Sur-La-Theorie-Generale-Des-Surfaces/wiki/Reviewer-List  "Reviewer List"
+  [6]: https://launchpad.net/rubber  "Rubber"
