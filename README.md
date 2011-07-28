@@ -54,5 +54,5 @@ Sure. Just do all the text, and note that in your pull request. We'll find someo
   [1]: http://miktex.org/   "MikTeX"
   [2]: http://www.tug.org/mactex/2011/   "MacTeX"
   [3]: http://www.archive.org/details/leconsurlagendes01darbrich "Original text"
-  [4]: http://github.com  "Style Guide"
-  [5]: http://github.com  "Reviewer List"
+  [4]: https://github.com/apetresc/Lecons-Sur-La-Theorie-Generale-Des-Surfaces/wiki/Style-Guide  "Style Guide"
+  [5]: https://github.com/apetresc/Lecons-Sur-La-Theorie-Generale-Des-Surfaces/wiki/Reviewer-List  "Reviewer List"
