@@ -1,0 +1,35 @@
+\chapter{Solving Linear Systems of Differential Equations}
+\label{chp2}
+
+\textbf{13.} It remains to study in a detailed manner the solutions of systems of differential
+equations of the form:
+\begin{align}
+  \left\{\begin{array}{rl}
+    \displaystyle \frac{\d{\alpha}}{\d{t}}  =& \beta  r - \gamma q, \\\\
+    \displaystyle \frac{\d{\beta}}{\d{t}}   =& \gamma p - \alpha r, \\\\
+    \displaystyle \frac{\d{\gamma}}{\d{t}}  =& \alpha q - \beta p
+  \end{array}\right. \label{linear-ode}
+\end{align}
+
+We have already encountered one of the fundamental properties of such a system: it admits a
+quadratic solution of the form
+\begin{align}
+  \alpha^2 + \beta^2 + \gamma^2 = C,
+\end{align}
+for constant $C$, and the existance of this solution implies, as a corollary, a series of
+propositions which enables, in many cases, the solution of the entire system.
+
+Before beginning our study of \eqref{linear-ode}, we will first show that all systems of the form
+\begin{align}
+  \left\{\begin{array}{rl}
+    \displaystyle \frac{\d{\alpha}}{\d{t}} =& A\alpha + B\beta + C\gamma, \\\\
+    \displaystyle \frac{\d{\beta}}{\d{t}}  =& A'\alpha + B'\beta + C'\gamma, \\\\
+    \displaystyle \frac{\d{\gamma}}{\d{t}} =& A''\alpha + B''\beta + C''\gamma
+  \end{array}\right.
+\end{align}
+where $A$, $B$, $C$ are functions of $t$, can be reduced to the form \eqref{linear-ode} whenever
+they have a quadratic solution of the form
+\[
+\varphi(\alpha, \beta, \gamma) = D,
+\]
+where $D$ is a constant and $\varphi$ is a homogenous quadratic function with arbitrary coefficients.
