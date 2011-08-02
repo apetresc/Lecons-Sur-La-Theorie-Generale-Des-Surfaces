@@ -21,13 +21,34 @@ propositions which enables, in many cases, the solution of the entire system.
 Before beginning our study of \eqref{linear-ode}, we will first show that all systems of the form:
 \begin{empheq}[left=\empheqlbrace]{align}
     \displaystyle \frac{\d{\alpha}}{\d{t}} &= A\alpha + B\beta + C\gamma, \nonumber \\
-    \displaystyle \frac{\d{\beta}}{\d{t}}  &= A'\alpha + B'\beta + C'\gamma, \\
+    \displaystyle \frac{\d{\beta}}{\d{t}}  &= A'\alpha + B'\beta + C'\gamma, \label{eqn-3}\\
     \displaystyle \frac{\d{\gamma}}{\d{t}} &= A''\alpha + B''\beta + C''\gamma \nonumber
 \end{empheq}
 
 where $A$, $B$, $C$ are functions of $t$, can be reduced to the form \eqref{linear-ode} whenever
 they have a quadratic solution of the form:
-\[
-\varphi(\alpha, \beta, \gamma) = D,
-\]
+\begin{align}
+\varphi(\alpha, \beta, \gamma) = D, \label{eqn-4}
+\end{align}
 where $D$ is a constant and $\varphi$ is a homogenous quadratic function with arbitrary coefficients.
+
+Indeed, since a linear homogenous substitution does not change the form of equations \eqref{eqn-3}, we
+can use such substitutions to reduce \eqref{eqn-4} to the form
+\begin{align}
+\alpha^2 + \beta^2 + \gamma^2 = C, \label{eqn-5}
+\end{align}
+for constant $C$, leaving aside for the moment exceptional cases where $\varphi$ is a square
+(or sum of squares), which we will deal with easily later on.
+
+If we assume that the first term of \eqref{eqn-5} is a solution of \eqref{eqn-3}, we obtain the initial
+conditions
+\[
+A = B' = C'' = B + A' = C + A'' = C' + B'' = 0,
+\]
+which allows us to reduce system \eqref{eqn-3} to the form \eqref{linear-ode}.
+
+Thus, the system is revealed as a reduced form of an entire class of systems having the propery,
+frequently encountered in practice, of admitting known solutions of the second degree. This unique
+characteristic of the equations we will be studying is worth pursuing, and motivates the
+developments which will follow.\footnote{We can also characterize such systems as 
+\textit{self-adjoint}.}
