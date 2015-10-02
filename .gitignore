@@ -5,3 +5,4 @@
 *.pdf
 # backup files
 *~
+src/master.synctex.gz
