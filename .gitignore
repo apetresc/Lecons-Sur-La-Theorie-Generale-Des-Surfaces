@@ -6,3 +6,5 @@
 # backup files
 *~
 src/master.synctex.gz
+src/master.fls
+*.fdb_latexmk
