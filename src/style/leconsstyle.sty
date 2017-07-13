@@ -1,1 +1,8 @@
 \renewcommand{\d}[1]{\ensuremath{\operatorname{d}\!{#1}}}  % Differential operator
+
+
+\newcommand\Chapter[2]{\chapter
+	[#1\hfil\hbox{}\protect\linebreak{\itshape#2}]%
+	{#1\\[2ex]\Large\itshape#2}%
+	\markboth{\MakeUppercase{\chaptername\ \thechapter.\ #1}}{}%
+}
