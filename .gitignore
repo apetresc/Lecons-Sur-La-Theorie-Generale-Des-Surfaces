@@ -5,6 +5,6 @@
 *.pdf
 # backup files
 *~
-src/master.synctex.gz
-src/master.fls
+*.synctex.gz
+*.fls
 *.fdb_latexmk
