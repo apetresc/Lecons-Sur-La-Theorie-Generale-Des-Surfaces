@@ -20,15 +20,35 @@ qui permettent le plus souvent une étude approfondie due mouvement, ce sont les
 à des axes mobiles, entraînés dans le mouvement du système invariable. Rappelons rapidement la méthode employée en 
 Mécanique.
 
-Soient OX, OY, OZ trois axes fixes passant par le point fixe O du système et O$x$, O$y$, O$z$ trois axes rectangulaires 
-invariablement liés au système mobile. Nous supposerons que les deux systèmes d'axes aient la mêmes disposition, 
-c'est-à-dire qu'ils puissent être amenés à coïncider. De plus, nous supposerons que les sens des axes aient été choisis 
-de telle manière que la rotation autour de OZ, qui déplacerait OX du côté de OY, soit représentée par une droite 
-dirigée suivant la partie positive de OZ. Nous déterminerons les axes mobiles par les cosinus des angles qu'ils forment 
-avec les axes fixes. Pour cela nous écrirons le Tableau
-$$
-% TBD
-Tableau
-$$
+Soient $OX$, $OY$, $OZ$ trois axes fixes passant par le point fixe O du système et $Ox$, $Oy$, $Oz$ trois axes 
+rectangulaires invariablement liés au système mobile. Nous supposerons que les deux systèmes d'axes aient la mêmes 
+disposition, c'est-à-dire qu'ils puissent être amenés à coïncider. De plus, nous supposerons que les sens des axes 
+aient été choisis de telle manière que la rotation autour de $OZ$, qui déplacerait $OX$ du côté de $OY$, soit 
+représentée par une droite dirigée suivant la partie positive de OZ. Nous déterminerons les axes mobiles par les 
+cosinus des angles qu'ils forment avec les axes fixes. Pour cela nous écrirons le Tableau
+
+\begin{center}
+	\bgroup
+	\def\arraystretch{1.7}
+	%\setlength\tabcolsep{10.7pt}
+	\begin{tabular}{ |c|c|c|c| } 
+	\hline
+	 & $x$ & $y$ & $z$ \\
+	\hline
+	$X$ & $a$ & $b$ & $c$ \\
+	\hline
+	$Y$ & $a'$ & $b'$ & $c'$ \\ 
+	\hline
+	$Z$ & $a''$ & $b''$ & $c''$ \\
+	\hline
+	\end{tabular}
+	\egroup
+\end{center}
 qui fait connaître les cosinus des angles formés par chacun des axes fixes avec les axes mobiles.
- 
+
+On a les relations
+\begin{empheq}[left=\empheqlbrace]{align}
+& a^2 + b^2 + c^2 = 1,    \ &&aa' + bb' + cc' = 0 \\
+& a^2 + a'^2 + a''^2 = 1, \ &&ab + a'b' + a''c'' = 0, \\
+& a = b'c'' - c'b'',      \ &&a + b + c = 1
+\end{empheq}
