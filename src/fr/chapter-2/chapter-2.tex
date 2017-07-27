@@ -4,4 +4,120 @@
 \Chapter{Sur L'Intégration Du Système Linéaire}{Qui Se Présente Dans La Théorie Précédente}
 \label{chp2}
 
-\textbf{13.} Il nous reste à étudier d'une manière détaillée l'intégration du système 
+\textbf{13.} Il nous reste à étudier d'une manière détaillée l'intégration du système
+\begin{empheq}[left=\empheqlbrace]{equation}
+\begin{aligned}
+\frac{\d{\alpha}}{\d{t}} &= \beta r - \gamma q, \\
+\frac{\d{\beta}}{\d{t}} &= \gamma p - \alpha r \\
+\frac{\d{\gamma}}{\d{t}} &= \alpha q - \beta p,
+\end{aligned} \label{eqn-2.1}
+\end{empheq}
+auquel satisfont les trois groupes des cosinus. Nous avons déjà signalé une propriété fondamentale de ce système. Il 
+admet l'intégrale du second degré
+
+\begin{empheq}[left=\empheqlbrace]{equation}
+\begin{aligned}
+\alpha^2 + \beta^2 + \gamma^2 = \textrm{const.}
+\end{aligned} \label{eqn-2.2}
+\end{empheq}
+et l'existence de cette intégrale entraîne, comme corollaires, une série de propositions qui facilitent, dans plusieurs 
+cas, l'intégration du système.
+
+Avant de commencer l'étude des équations (\ref{eqn-2.1}), je vais d'abord montrer que tout système linéaire de la forme
+\begin{empheq}[left=\empheqlbrace]{equation}
+\begin{aligned}
+\frac{\d{\alpha}}{\d{t}} &= A\alpha + B\beta + C\gamma, \\
+\frac{\d{\beta}}{\d{t}} &= A'\alpha + B'\beta + C'\gamma, \\
+\frac{\d{\gamma}}{\d{t}} &= A''\alpha + B''\beta + C''\gamma,
+\end{aligned} \label{eqn-2.3}
+\end{empheq}
+où $A$, $B$, $C$, \dots\, sont des fonctions de $t$, peut être ramené à la forme (\ref{eqn-2.1}) toutes les fois qu'il 
+admet une intégrale du second degré
+\begin{equation}
+\varphi(\alpha, \beta, \gamma) = \textrm{const.},
+\label{eqn-2.4}
+\end{equation}
+$\varphi$ désignant une fonction homogène du second degré, à coefficients constants ou variables.
+
+En effet, par une substitution linéaire qui ne change évidement pas la forme des équations (\ref{eqn-2.3}), on peut 
+ramener l'équation (\ref{eqn-2.4}) (sauf les cas exceptionnels, que l'on traitera facilement, où la fonction $\varphi$ 
+serait un carré ou une somme de deux carrés) à la forme
+\begin{equation}
+\alpha^2 + \beta^2 + \gamma^2 = \textrm{const.}
+\label{eqn-2.5}
+\end{equation}
+Si l'on exprime que le premier membre de cette équation est une intégrale du système (\ref{eqn-2.3}), on obtient les 
+équations
+\[
+A = B' = C'' = B + A' = C + A'' = C' + B'' = 0,
+\]
+qui montrent bien que la système (\ref{eqn-2.3}) se ramène à la forme (\ref{eqn-2.1}).
+
+Le système (\ref{eqn-2.1}) nous apparaît donc comme le type ou la \textit{forme réduite} d'une classe entière de 
+systèmes présentant la propriété, que l'on rencontre fréquemment dans les applications, d'admettre une intégrale du 
+second degré. Ce caractère particulier des équations que nous allons étudier méritait d'être signalé et suffirait à 
+justifier l'étendue des développements qui vont suivre.
+
+\textbf{14.} Je vais montrer d'abord que, toutes les fois que l'on connaîtra une solution particulière $(\alpha_0, 
+\beta_0, \gamma_0)$ du système (\ref{eqn-2.1}), on pourra joindre l'intégrale du première degré
+\[
+\alpha\alpha_0 + \beta\beta_0 + \gamma\gamma_0 = \textrm{const.},
+\]
+à l'intégrale déjà donnée du second degré.
+
+En effet, si l'on a une solution quelconque $(\alpha, \beta, \gamma)$ du système (\ref{eqn-2.1}), on en pourra déduire, 
+d'après les propriétés de tout système linéaire, une solution plus générale
+\[
+\alpha + k\alpha_0, \quad \beta + k\beta_0, \quad \gamma + k\gamma_0,
+\]
+$k$ désignant une constante quelconque. On devra donc avoir, pour toutes les valeurs de $k$,
+\[
+(\alpha + k\alpha_0)^2 + (\beta + k\beta_0)^2 + (\gamma + k\gamma_0)^2 = \textrm{const.},
+\]
+ou, en développant,
+\[
+\alpha^2 + \beta^2 + \gamma^2 + 2k(\alpha\alpha_0 + \beta\beta_0 + \gamma\gamma_0) + k^2(\alpha_0^2 + \beta_0^2 + 
+\gamma_0^2) = \textrm{const.}
+\]
+
+Le premier et le dernier terme du premier membre étant constants, il en sera de même de
+\[
+\alpha\alpha_0 + \beta\beta_0 + \gamma\gamma_0,
+\]
+comme il fallait de démontrer.
+
+Il résulte évidemment de là que, si l'on connaissait seulement deux solutions particulières du système (\ref{eqn-2.1}), 
+$(\alpha_0, \beta_0, \gamma_0)$, $(\alpha_1, \beta_1, \gamma_1)$, on pourrait immédiatement écrire la solution 
+générale, qui serait définie par les équations
+\begin{align*}
+\alpha^2 + \beta^2 + \gamma^2 &= \textrm{const.}, \\
+\alpha\alpha_0 + \beta\beta_0 + \gamma\gamma_0 &= \textrm{const.}, \\
+\alpha\alpha_1 + \beta\beta_1 + \gamma\gamma_1 &= \textrm{const.};
+\end{align*} 
+ces équations peuvent être résolue et donnent pour $\alpha$, $\beta$, $\gamma$ les valeurs
+\begin{empheq}[left=\empheqlbrace]{equation}
+\begin{aligned}
+\alpha &= c_0\alpha_0 + c_1\alpha_1 + c_2(\beta_0\gamma_1 - \beta_1\gamma_0), \\
+\beta &= c_0\beta_0 + c_1\beta_1 + c_2(\gamma_0\alpha_1 - \alpha_0\gamma1), \\
+\gamma &= c_0\gamma_0 + c_1\gamma_1 + c_2(\alpha_0\beta_1 - \alpha_1\beta_0),
+\end{aligned} \label{eqn-2.6}
+\end{empheq}
+où $c_0$, $c_1$, $c_2$ désignent des constantes arbitraires. Mais on peut obtenir une proposition plus complète et 
+montrer que, si l'on connaît une seule solution du système (\ref{eqn-2.1}), une seule quadrature suffira à nous donner 
+son intégrale générale.
+
+\textbf{15.} Pour établir ce résultat essentiel, remarquons que les valeurs les plus générales de $\alpha$, $\beta$, 
+$\gamma$ doivent satisfaire à la relation
+\[
+\alpha^2 + \beta^2 + \gamma^2 = \textrm{const.}
+\]
+
+Commençons d'abord par écarter le cas où la constante serrait nulle; on pourra toujours, en divisant ces valeurs par 
+une constant convenable, supposer que l'on a
+\begin{equation}
+\alpha^2 + \beta^2 + \gamma^2 = 1.
+\label{eqn-2.7}
+\end{equation}
+
+Remarquons même que, dans le problème particulier que nous avons à traiter, $\alpha$, $\beta$, $\gamma$ étant trois 
+cosinus directeurs, doivent nécessairement satisfaire à cette relation. Il est naturel d'exprimer 
