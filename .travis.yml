@@ -17,3 +17,4 @@ deploy:
   acl: public_read
   on:
     repo: apetresc/Lecons-Sur-La-Theorie-Generale-Des-Surfaces
+  skip_cleanup: true
