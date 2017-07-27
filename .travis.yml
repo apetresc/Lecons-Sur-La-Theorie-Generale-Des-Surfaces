@@ -1,10 +1,19 @@
 sudo: required
-
 services:
-    - docker
-
+- docker
 before_install:
-    - docker pull tianon/latex
-
+- docker pull tianon/latex
 script:
-    - docker run -it -v $(pwd)/src:/src tianon/latex bash -c "cd /src/fr && pdflatex master.tex && pdflatex master.tex"
+- docker run -it -v $(pwd)/src:/src tianon/latex bash -c "cd /src/fr && pdflatex master.tex
+  && pdflatex master.tex"
+deploy:
+  provider: s3
+  access_key_id: AKIAJSYX42GDKOI7KPFQ
+  secret_access_key:
+    secure: OkLQlU3j0LqDa1nTlWTrpeJ491zxpVwGBOMwS/4r3JF21yzVZslhMDCGps5JUrn4pTm+SV9XwWlF9JGMZnkbb5FLdmfgsKbCEoCOasR+G2DiiV+8Me5d3FabZ/GDbreAXEXJSbIDSMS4G7CznPMyFA8r22VVR8+2BJrigdmAehc=
+  bucket: apetresc_site
+  local-dir: src/fr/master.pdf
+  upload-dir: travis_upload
+  acl: public_read
+  on:
+    repo: apetresc/Lecons-Sur-La-Theorie-Generale-Des-Surfaces
