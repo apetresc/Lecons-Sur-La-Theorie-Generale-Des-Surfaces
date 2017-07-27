@@ -11,7 +11,7 @@ deploy:
   access_key_id: AKIAJSYX42GDKOI7KPFQ
   secret_access_key:
     secure: OkLQlU3j0LqDa1nTlWTrpeJ491zxpVwGBOMwS/4r3JF21yzVZslhMDCGps5JUrn4pTm+SV9XwWlF9JGMZnkbb5FLdmfgsKbCEoCOasR+G2DiiV+8Me5d3FabZ/GDbreAXEXJSbIDSMS4G7CznPMyFA8r22VVR8+2BJrigdmAehc=
-  bucket: apetresc_site
+  bucket: apetresc-site
   local-dir: src/fr
   upload-dir: travis_upload
   acl: public_read
