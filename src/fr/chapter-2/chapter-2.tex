@@ -120,4 +120,40 @@ une constant convenable, supposer que l'on a
 \end{equation}
 
 Remarquons même que, dans le problème particulier que nous avons à traiter, $\alpha$, $\beta$, $\gamma$ étant trois 
-cosinus directeurs, doivent nécessairement satisfaire à cette relation. Il est naturel d'exprimer 
+cosinus directeurs, doivent nécessairement satisfaire à cette relation. Il est naturel d'exprimer $\alpha$, $\beta$, 
+$\gamma$ en fonction de deux variables indépendantes, de manière que la relation précédente soit toujours satisfaite, 
+et de chercher ces deux variables.
+
+Or, si l'on regarde $\alpha$, $\beta$, $\gamma$ comme les coordonnées d'un point de l'espace, l'équation 
+(\ref{eqn-2.7}) représentera une sphère de rayon 1, ayant pour le centre l'origine des coordonnées. Considérons cette 
+sphère comme une surface réglée, admettant un double système de génératrices imaginaires, et prenons pour variables 
+deux quantités demeurant constantes respectivement sur les génératrices de chaque système. Pour cela, nous poserons
+\begin{empheq}[left=\empheqlbrace]{equation}
+	\begin{aligned}
+		\frac{\alpha + i\beta}{1 - \gamma} &= \frac{1 + \gamma}{\alpha - i\beta} = x, \\
+		\frac{\alpha - i\beta}{1 - \gamma} &= \frac{1 + \gamma}{\alpha + i\beta} = -\frac{1}{y},
+	\end{aligned} \label{eqn-2.8}
+\end{empheq}
+ce qui donnera
+\begin{equation}
+	\alpha = \frac{1 - xy}{x - y}, \quad \beta = i\frac{1 + xy}{x - y}, \quad \gamma = \frac{x + y}{x - y}.
+	\label{eqn-2.9}
+\end{equation}
+
+Remarquons que, d'après les formules (\ref{eqn-2.8}), $x$ et $y$ seront imaginaires quand $\alpha$, $\beta$, $\gamma$ 
+seront réels, et, en outre, l'imaginaire conjuguée de $x$ sera $-\frac{1}{y}$.
+
+Si nous substituons les valeurs (\ref{eqn-2.9}) de $\alpha$, $\beta$, $\gamma$ dans les équations différentielles, ces 
+équations se réduiront à deux, comme on devait s'y attendre, et après quelques calcules faciles, on obtiendra le système
+\begin{empheq}[left=\empheqlbrace]{equation}
+	\begin{aligned}
+		\frac{\d{x}}{\d{t}} &= -ir\,x + \frac{q - ip}{2} + \frac{q + ip}{2}x^2, \\
+		\frac{\d{y}}{\d{t}} &= -ir\,y + \frac{q - ip}{2} + \frac{q + ip}{2}y^2;
+	\end{aligned} \label{eqn-2.10}
+\end{empheq}
+$x$ et $y$ doivent être deux solutions différentes de la même équation en $\sigma$
+\begin{equation}
+	\frac{\d\sigma}{\d{t}} = -ir\,\sigma + \frac{q - ip}{2} + \frac{q + ip}{2}\sigma^2,
+\end{equation}
+et l'intégration du système proposé est ramenée à celle de cette seule équation. Deux solutions particulières 
+distinctes de cette équation donneront toujours, par l'emploi de cette (\ref{eqn-2.9}), des
