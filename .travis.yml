@@ -7,8 +7,8 @@ script:
 - docker run -it -v $(pwd)/src:/src tianon/latex bash -c "cd /src/fr && pdflatex master.tex
   && pdflatex master.tex"
 before_deploy:
-- mkdir deploy/$(git rev-parse --abbrev-ref HEAD)
-- cp $(pwd)/src/fr/master.pdf deploy/$(git rev-parse --abbrev-ref HEAD)/master.pdf
+- mkdir -p deploy/$TRAVIS_BRANCH
+- cp $(pwd)/src/fr/master.pdf deploy/$TRAVIS_BRANCH/master.pdf
 deploy:
   provider: s3
   access_key_id: AKIAJSYX42GDKOI7KPFQ
