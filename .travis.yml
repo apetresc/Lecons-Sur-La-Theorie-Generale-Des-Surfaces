@@ -1,3 +1,4 @@
+language: generic
 sudo: required
 env:
 - BOOK_LANG=fr
