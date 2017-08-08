@@ -1,14 +1,17 @@
 sudo: required
+env:
+- BOOK_LANG=fr
+- BOOK_LANG=en
 services:
 - docker
 before_install:
 - docker pull tianon/latex
 script:
-- docker run -it -v $(pwd)/src:/src tianon/latex bash -c "cd /src/fr && pdflatex master.tex
+- docker run -it -v $(pwd)/src:/src tianon/latex bash -c "cd /src/$BOOK_LANG && pdflatex master.tex
   && pdflatex master.tex"
 before_deploy:
-- mkdir -p deploy/$TRAVIS_BRANCH
-- cp $(pwd)/src/fr/master.pdf deploy/$TRAVIS_BRANCH/master.pdf
+- mkdir -p deploy/$TRAVIS_BRANCH/$BOOK_LANG
+- cp $(pwd)/src/$BOOK_LANG/master.pdf deploy/$TRAVIS_BRANCH/$BOOK_LANG/master.pdf
 deploy:
   provider: s3
   access_key_id: AKIAJSYX42GDKOI7KPFQ
