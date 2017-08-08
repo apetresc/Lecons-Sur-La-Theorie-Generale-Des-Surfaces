@@ -1,5 +1,7 @@
-all:
-	rubber --pdf src/master.tex
+fr:
+	cd src/fr && pdflatex master.tex && pdflatex master.tex
 
-clean:
-	rubber --clean --pdf src/master.tex
+en:
+	cd src/en && pdflatex master.tex && pdflatex master.tex
+
+all: en fr
