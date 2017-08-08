@@ -6,13 +6,16 @@ before_install:
 script:
 - docker run -it -v $(pwd)/src:/src tianon/latex bash -c "cd /src/fr && pdflatex master.tex
   && pdflatex master.tex"
+before_deploy:
+- mkdir deploy/$(git rev-parse --abbrev-ref HEAD)
+- cp $(pwd)/src/fr/master.pdf deploy/$(git rev-parse --abbrev-ref HEAD)/master.pdf
 deploy:
   provider: s3
   access_key_id: AKIAJSYX42GDKOI7KPFQ
   secret_access_key:
     secure: OkLQlU3j0LqDa1nTlWTrpeJ491zxpVwGBOMwS/4r3JF21yzVZslhMDCGps5JUrn4pTm+SV9XwWlF9JGMZnkbb5FLdmfgsKbCEoCOasR+G2DiiV+8Me5d3FabZ/GDbreAXEXJSbIDSMS4G7CznPMyFA8r22VVR8+2BJrigdmAehc=
-  bucket: apetresc-site
-  local-dir: src/fr
+  bucket: lecons
+  local-dir: deploy
   upload-dir: travis_upload
   acl: public_read
   on:
