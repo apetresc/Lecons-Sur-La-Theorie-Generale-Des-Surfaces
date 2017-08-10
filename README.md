@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/apetresc/Lecons-Sur-La-Theorie-Generale-Des-Surfaces.svg?branch=master)](https://travis-ci.org/apetresc/Lecons-Sur-La-Theorie-Generale-Des-Surfaces) [![French PDF](https://img.shields.io/badge/PDF%20%28French%29-master-yellowgreen.svg)](http://lecons.s3.amazonaws.com/master/fr/master.pdf) [![English PDF](https://img.shields.io/badge/PDF%20%28English%29-master-yellowgreen.svg)](http://lecons.s3.amazonaws.com/master/fr/master.pdf)
+
 Introduction
 ============
 
@@ -38,7 +40,7 @@ __Style Review__: Just like with code, when writing (or even just translating) a
 
 Frequently Asked Questions
 ==========================
- 
+
 #### Are you legally allowed to do this?
 
 As far as I can tell, this work is in the public domain. I've seen several pieces of evidence which back that up, and essentially nothing to contradict it. The guy's been dead for over a hundred years, after all.
