@@ -154,6 +154,70 @@ Si nous substituons les valeurs (\ref{eqn-2.9}) de $\alpha$, $\beta$, $\gamma$ d
 $x$ et $y$ doivent être deux solutions différentes de la même équation en $\sigma$
 \begin{equation}
 	\frac{\d\sigma}{\d{t}} = -ir\,\sigma + \frac{q - ip}{2} + \frac{q + ip}{2}\sigma^2,
+	\label{eqn-2.11}
 \end{equation}
 et l'intégration du système proposé est ramenée à celle de cette seule équation. Deux solutions particulières 
-distinctes de cette équation donneront toujours, par l'emploi de cette (\ref{eqn-2.9}), des
+distinctes de cette équation donneront toujours, par l'emploi de cette (\ref{eqn-2.9}), des valeurs réelles ou 
+imaginaires de $\alpha$, $\beta$, $\gamma$, vérifiant le système (\ref{eqn-2.1}). Remarquons même que, lorsque $p$, 
+$q$, $r$ seront des fonctions réelles, il suffira de connaître une solution particulière $\sigma$ de l'équation 
+(\ref{eqn-2.11}) pour en déduire une solution $(\alpha, \beta, \gamma)$ du système proposé. En effet, désignons par 
+$\sigma'$ l'imaginaire conjuguée de $\sigma$. Je vais montrer que $-\frac{1}{\sigma'}$ est encore une solution 
+particulière de l'équation (\ref{eqn-2.11}).
+
+Pour cela changeons $i$ en $-i$ dans cette équation, nous aurons
+\[
+	\frac{\d{\sigma'}}{\d{t}} = + ir\sigma' + \frac{q+ ip}{2} + \frac{q - ip}{2}\sigma'^2
+\]
+et, par conséquent,
+\[
+	\frac{\d{}}{\d{t}}\left(-\frac{1}{\sigma'}\right) = -ir\left(-\frac{1}{\sigma'}\right) + \frac{q - ip}{2} + \frac{q 
+	+ ip}{2}\left(-\frac{1}{\sigma'}\right)^2.
+\]
+Il suffit de comparer à l'équation (\ref{eqn-2.11}) pour reconnaître que $-\frac{1}{\sigma'}$ est bien une solution 
+particulière de cette équation.
+
+\textbf{16.} L'équation en $\sigma$ appartient au groupe des équations de la forme
+\begin{equation}
+	\frac{\d{\sigma}}{\d{t}} = a + 2b\sigma + c\sigma^2,
+	\label{eqn-2.13}
+\end{equation}
+où $a$, $b$, $c$ sont des fonctions quelconques de $t$. Ce sont les plus simples après les équations linéaires. Comme 
+on les rencontre fréquemment dans les applications, on leur a donné le nom de Riccati, parce qu'elles comprennent comme 
+cas particulier l'équation
+\[
+	\frac{\d{\sigma}}{\d{t}} = a\sigma^2 + bt^m,
+\]
+qui, seule, a été l'objet des recherches du géomètre italien. Nous allons rappeler rapidement leurs principales 
+propriétés.
+
+D'abord, elles ne changent pas de forme quand on effectue sur $\sigma$ une substitution linéaire, c'est-à-dire quand on 
+substitue à $\sigma$ la variable $\lambda$ définie par l'équation
+\[
+	\lambda = \frac{P\sigma + Q}{R\sigma + S}
+\]
+où $P$, $Q$, $R$, $S$ sont des fonctions quelconques de $t$.
+
+En second lieu, on peut les intégrer dès que l'on en connaît une solution particulière. Soit, en effet, 
+$\sigma=\sigma_0$ une telle solution. Posons
+\[
+	\sigma = \sigma_0 + \frac{1}{\lambda},
+\]
+et nous obtiendrons pour $\lambda$ l'équation linéaire
+\begin{equation}
+	\frac{\d{\lambda}}{\d{t}} = -c -2(c\sigma_0 + b)\lambda,
+	\label{eqn-2.14}
+\end{equation}
+dont l'intégration exigera seulement deux quadratures effectuées successivement.
+
+De là résulte une des propriétés fondamentales de l'équation de Riccati. Comme la valeur générale de $\lambda$ est 
+linéaire par rapport à la constante arbitraire $C$ et de la forme
+\[
+	PC + Q,
+\]
+on voit que l'intégrale générale de l'équation de Riccati sera de la forme
+\[
+	\sigma = \frac{RC + S}{PC + Q},
+\]
+$P$, $Q$, $R$, $S$ étant des fonctions de la variable indépendante de $t$. On déduit de là que \textit{le rapport 
+anharmonique de quatre solutions de l'équation est constant et égal à celui des quatre valeurs de la constante 
+arbitraire correspondantes à ces solutions}.
