@@ -57,61 +57,124 @@ On a les relations
         & a = b'c'' - c'b'',      \quad && \begin{vmatrix} a & b & c \\ a' & b' & c' \\ a'' & b'' & c'' \end{vmatrix} = 1,
 	\end{aligned} \label{eqn-1}
 \end{empheq}
-auxquelles il faut joindre toutes celles que l'on obtiendrait par des permutations circulaires effectuées, soit sur les lettres, soit sur les indices. Rappelons encore que les neuf cosinus peuvent être exprimés par les trois angles d'Euler, au moyen des formules
+auxquelles il faut joindre toutes celles qu'on obtiendrait par des permutations circulaires effectuées, soit sur les 
+lettres, soit sur les indices. Rappelons encore que les neuf cosinus peuvent être exprimés par les trois angles 
+d'Euler, au moyen des formules\footnote{Dans ces formules, $\psi$ désigne l'angle de $OX$ avec l'intersection commune 
+$ON$ des deux plans dex $xy$ et dex $XY$, $\varphi$ désigne l'angle de $Ox$ avec la même droite $ON$; enfin $\theta$ 
+est l'angle de $Oz$ et $OZ$. L'angle $\varphi$ mesure la grandeur de la rotation qu'il faut imprimer à $ON$ dans le 
+plan des $xy$, et dans le sens direct, pour faire coïncider $ON$ avec $Ox$; on peut supposer qu'il varie de $0^\circ$ à 
+$180^\circ$. De même, $\psi$ mesure la rotation que l'on doit imprimer à $ON$ dans le plan des $XY$, toujours dans le 
+sens direct, pour amener cette droite à coïncider avec $OX$: cet angle varie de $0^\circ$ à $360^\circ$.}
 \begin{empheq}[left=\empheqlbrace]{equation}
 	\begin{aligned}
-        a   &= \cos\theta \sin\varphi \sin\psi + \cos\varphi \cos\psi, \\
-        b   &= \cos\theta \sin\psi \cos\varphi - \cos\psi \sin\varphi, \\
-        c   &= \sin\theta \sin\psi \\
-        a'  &= \cos\theta \cos\psi \sin\varphi - \sin\psi \cos\varphi, \\
-        b'  &= \cos\theta \cos\psi \cos\varphi + \sin\psi \sin\varphi, \\
-        c'  &= \sin\theta \cos\psi, \\
+        a   &= \phantom{-}\cos\theta \sin\varphi \sin\psi + \cos\varphi \cos\psi, \\
+        b   &= \phantom{-}\cos\theta \sin\psi \cos\varphi - \cos\psi \sin\varphi, \\
+        c   &= \phantom{-}\sin\theta \sin\psi, \\
+        a'  &= \phantom{-}\cos\theta \cos\psi \sin\varphi - \sin\psi \cos\varphi, \\
+        b'  &= \phantom{-}\cos\theta \cos\psi \cos\varphi + \sin\psi \sin\varphi, \\
+        c'  &= \phantom{-}\sin\theta \cos\psi, \\
         a'' &= -\sin\theta \sin\varphi, \\
         b'' &= -\sin\theta \cos\varphi, \\
-        c'' &= \cos\phi.
+        c'' &= \phantom{-}\cos\theta.
 	\end{aligned} \label{eqn-2}
 \end{empheq}
+
+Un autre système de formules, également dû à Euler, doit être rappelé ici. On sait que les axes fixes peuvent être 
+ramenés à coïncider avec les axes mobiles par une rotation d'angle fini autour d'une droite passant par le point $O$. 
+Si l'on désigne par $\theta$ l'angle de cette rotation, par $\alpha$, $\beta$, $\gamma$ les angles de son axe avec les 
+axes fixes (at aussi avec les axes mobiles) et si l'on pose
+\begin{equation}
+	\frac{\lambda}{\rho} = \cos{\alpha}\tan{\frac{\theta}{2}}, \quad
+	\frac{\mu}{\rho} = \cos{\beta}\tan{\frac{\theta}{2}}, \quad
+	\frac{\nu}{\rho} = \cos{\gamma}\tan{\frac{\theta}{2}},
+	\label{eqn-1.3}
+\end{equation}
+les formules qui permettent de passer des axes fixes aux axes mobiles seront
+\begin{empheq}[left=\empheqlbrace]{equation}
+	\begin{aligned}
+		BX = (\rho^2 + \lambda^2 - \mu^2 - \nu^2)\,x + 2(\lambda\mu + \nu\rho)\,y + 2(\lambda\nu - \mu\rho)\,z, \\
+		BY = 2(\lambda\mu - \nu\rho)\,x + (\rho^2 + \mu^2 - \lambda^2 - \nu^2)\,y + 2(\mu\nu + \lambda\rho)\,z, \\
+		BZ = 2(\lambda\nu + \mu\rho)\,x + 2(\mu\nu - \lambda\rho)\,y + (\rho^2 + \nu^2 - \lambda^2 - \mu^2)\,z,
+	\end{aligned} \label{eqn-1.4}
+\end{empheq}
+$B$ désignant, pour abréger, la somme
+\begin{equation}
+	B = \lambda^2 + \mu^2 + \nu^2 + \rho^2.
+	\label{eqn-1.5}
+\end{equation}
+
+De là résultent les valeurs suivantes des neuf cosinus:
+\begin{empheq}[left=\empheqlbrace]{equation}
+	\begin{aligned}
+		& Ba = \rho^2 + \lambda^2 - \mu^2 - \nu^2, && Bb = 2\lambda\mu + 2\nu\rho, && Bc = 2\lambda\nu - 2\mu\rho, \\
+		& Ba' = 2\lambda\mu - 2\nu\rho, && Bb' = \rho^2 + \mu^2 - \lambda^2 - \nu^2, && Bc' = 2\mu\nu + 2\lambda\rho, 
+		\\
+		& Ba'' = 2\lambda\nu + 2\mu\rho, && Bb'' = 2\mu\nu - 2\lambda\rho, && Bc'' = \rho^2 + \nu^2 - \lambda^2 - 
+		\mu^2 
+	\end{aligned} \label{eqn-1.6}
+\end{empheq}
+qui sont cette fois des fonctions algébriques des trois arbitraires.\footnote{Pour la démonstration de ces formules, on 
+pourra consulter soit les \textit{Leçons de Cinématique théorique} de M. G. K\oe nigs, p. 344, soit la Note V de 
+$4^{\textrm{e}}$ Partie de cet Ouvrage, $1^\textrm{re}$ édition.}
+
+Les valeurs des cosinus ne dépendent que des rapports mutuels de $\lambda$, $\mu$, $\nu$, $\rho$. Comme $B$ n'est pas 
+nul, il y aura souvent avantage à le prendre égal à 1. Si l'on suppose
+\begin{equation}
+	\lambda^2 + \mu^2 + \nu^2 + \rho^2 = 1,
+	\label{eqn-1.7}
+\end{equation}
+les formules (\ref{eqn-1.3}) nous donneront les valeurs suivantes:
+\begin{equation}
+	\lambda = \cos{\alpha}\sin{\frac{\theta}{2}}, \quad
+	\mu = \cos{\beta}\sin{\frac{\theta}{2}}, \quad
+	\nu = \cos{\gamma}\sin{\frac{\theta}{2}}, \quad
+	\rho = \cos{\frac{\theta}{2}},
+	\label{eqn-1.8}
+\end{equation}
+
+de $\lambda$, $\mu$, $\nu$, $\rho$. Nous dirons que ces valeurs sont les \textit{paramètres quaternioniens} du 
+déplacement. Il est clair qu'elles le déterminent complètement.
+
+Remarquons qu'on peut changer simultanément tous les signes des paramètres quaternoniens. Cela revient à remplacer 
+$\theta$ par $\theta + 2\pi$.
+
 Désignons maintenant par $p$, $q$, $r$ les composantes de la rotation à l'instant $t$ par rapport aux axes mobiles. 
 Considérons un point dont les coordonnées soient $x$, $y$, $z$, relativement aux axes mobiles, et cherchons les 
-composantes de sa vitesse absolue par rapport aux mêmes axes. En écrivant que cette vitesse absolue est la résultante
-de la vitesse relative et de celles qui seraient dues aux trois rotations $p$, $q$, $r$, on obtiendra les expressions
+composantes de sa vitesse \textit{absolue} par rapport aux mêmes axes. En écrivant que cette vitesse absolue est la 
+résultante de la vitesse relative et de celles qui seraient dues aux trois rotations $p$, $q$, $r$, on obtiendra les 
+expressions
 suivantes de ces composantes
 \begin{empheq}[left=\empheqlbrace]{equation}
 	\begin{aligned}
-        V_x &= \frac{\d{x}}{\d{t}} + qx - ry, \\
+        V_x &= \frac{\d{x}}{\d{t}} + qz - ry, \\
         V_y &= \frac{\d{y}}{\d{t}} + rx - pz, \\
         V_z &= \frac{\d{z}}{\d{t}} + py - qx,
-	\end{aligned} \label{eqn-1.3}
+	\end{aligned} \label{eqn-1.9}
 \end{empheq}
 dont nous aurons souvent à faire usage.
 
 Nous allons montrer, dès à présent, comment on peut en déduire les expressions de $p$, $q$, $r$ en fonction des neuf 
 cosinus et de leurs dérivées par rapport au temps. Pour cela, considérons le point pris sur l'axe $OX$ à la distance 
 $1$. Ce point a pour coordonnées relatives (c'est-à-dire relativement aux axes mobiles) $a$, $b$, $c$. En exprimant que 
-sa vitesse est nulle et en appliquant les formules \ref{eqn-1.3}, nous obtiendrons les équations fondamentales
-\begin{empheq}[left=\empheqlbrace]{equation}
-	\begin{aligned}
-		\frac{\d{a}}{\d{t}} &= br - cq, \\
-		\frac{\d{b}}{\d{t}} &= cp - ar, \\
-		\frac{\d{c}}{\d{t}} &= aq - bp,
-	\end{aligned} \label{eqn-1.4}
-\end{empheq}
+sa vitesse est nulle et en appliquant les formules (\ref{eqn-1.3}), nous obtiendrons les équations fondamentales
+\begin{equation}
+	\frac{\d{a}}{\d{t}} = br - cq, \quad
+	\frac{\d{b}}{\d{t}} = cp - ar, \quad
+	\frac{\d{c}}{\d{t}} = aq - bp,
+	\label{eqn-1.10}
+\end{equation}
 auxquelles on peut joindre les suivantes
-\begin{empheq}[left=\empheqlbrace]{equation}
-	\begin{aligned}
-		\frac{\d{a'}}{\d{t}} &= b'r - c'q, \\
-		\frac{\d{b'}}{\d{t}} &= c'p - a'r, \\
-		\frac{\d{c'}}{\d{t}} &= a'q - b'p;
-	\end{aligned} \label{eqn-1.4p}
-\end{empheq}
-\begin{empheq}[left=\empheqlbrace]{equation}
-	\begin{aligned}
-		\frac{\d{a''}}{\d{t}} &= b''r - c''q, \\
-		\frac{\d{b''}}{\d{t}} &= c''p - a''r, \\
-		\frac{\d{c''}}{\d{t}} &= a''q - b''p,
-	\end{aligned} \label{eqn-1.4pp}
-\end{empheq}
-que l'on démontrera de la même manière.
+\begin{align}
+	& \frac{\d{a'}}{\d{t}} = b'r - c'q, \quad
+	&& \frac{\d{b'}}{\d{t}} = c'p - a'r, \quad
+	&& \frac{\d{c'}}{\d{t}} = a'q - b'p\,;
+	\label{eqn-1.10p}\tag{\theequation'} \\
+	&\frac{\d{a''}}{\d{t}} = b''r - c''q, \quad
+	&& \frac{\d{b''}}{\d{t}} = c''p - a''r, \quad
+	&& \frac{\d{c''}}{\d{t}} = a''q - b''p,
+	\label{eqn-1.10pp}\tag{\theequation''}
+\end{align}
+qu'on démontrera de la même manière.
 
 On déduit de là les formules
 \begin{empheq}[left=\empheqlbrace]{equation}
@@ -119,31 +182,57 @@ On déduit de là les formules
 		p \d{t} &= \sum{c}\d{b} = - \sum{b} \d{c}, \\
 		q \d{t} &= \sum{a}\d{c} = - \sum{c} \d{a}, \\
 		r \d{t} &= \sum{b}\d{a} = - \sum{a} \d{b},
-	\end{aligned} \label{eqn-1.5}
+	\end{aligned} \label{eqn-1.11}
 \end{empheq}
 qui donnent les valeurs cherchées des rotations. Si l'on remplace les cosinus par leurs expressions en fonction des 
 angles d'Euler, on aura le système
 \begin{empheq}[left=\empheqlbrace]{equation}
 	\begin{aligned}
-		p &= \sin\varphi\sin\theta\frac{\d{\psi}}{\d{t}} - \cos\varphi\frac{\d{\theta}}{\d{t}}, \\
-		q &= \cos\varphi\sin\theta\frac{\d{\psi}}{\d{t}} + \sin\varphi\frac{\d{\theta}}{\d{t}}, \\
-		r &= \frac{\d{\varphi}}{\d{t}} - \cos\theta\frac{\d{\psi}}{\d{t}},
-	\end{aligned} \label{eqn-1.6}
+		p &= \sin{\varphi}\sin{\theta\frac{\d{\psi}}{\d{t}}} - \cos{\varphi\frac{\d{\theta}}{\d{t}}}, \\
+		q &= \cos{\varphi}\sin{\theta\frac{\d{\psi}}{\d{t}}} + \sin{\varphi\frac{\d{\theta}}{\d{t}}}, \\
+		r &= \frac{\d{\varphi}}{\d{t}} - \cos{\theta\frac{\d{\psi}}{\d{t}}},
+	\end{aligned} \label{eqn-1.12}
 \end{empheq}
 qu'il serait aisé de démontrer géométriquement. En résolvent par rapport aux dérivées des angles, on trouve
 \begin{empheq}[left=\empheqlbrace]{equation}
 	\begin{aligned}
-		\frac{\d\theta}{\d{t}} &= q\sin\varphi - p\cos\varphi, \\
-		\sin\theta\frac{\d\psi}{\d{t}} &= q\cos\varphi + p\sin\varphi, \\
-		\frac{\d\varphi}{\d{t}} &= r + \cot\theta(p\sin\varphi + q\cos\varphi).
-	\end{aligned} \label{eqn-1.7}
+		\frac{\d\theta}{\d{t}} &= q\sin{\varphi} - p\cos{\varphi}, \\
+		\sin{\theta\frac{\d\psi}{\d{t}}} &= q\cos{\varphi} + p\sin{\varphi}, \\
+		\frac{\d\varphi}{\d{t}} &= r + \cos{\theta}(p\sin{\varphi} + q\cos{\varphi}).
+	\end{aligned} \label{eqn-1.13}
 \end{empheq}
+
+Si, au lieu d'employer les premières formules d'Euler, on utilisait les secondes avec les arbitraires $\lambda$, $\mu$, 
+$\nu$, $\rho$, on trouverait de même
+\begin{empheq}[left=\empheqlbrace]{equation}
+	\begin{aligned}
+		\frac{1}{2}Bp &= \nu\,\dd{\mu}{t} - \mu\,\dd{\nu}{t} + \lambda\,\dd{\rho}{t} - \rho\,\dd{\lambda}{t}, \\
+		\frac{1}{2}Bq &= \lambda\,\dd{\nu}{t} - \nu\,\dd{\lambda}{t} + \mu\,\dd{\rho}{t} - \rho\,\dd{\mu}{t}, \\
+		\frac{1}{2}Br &= \mu\,\dd{\lambda}{t} - \lambda\,\dd{\rho}{t} + \nu\,\dd{\rho}{t} - \rho\,\dd{\nu}{t}.
+	\end{aligned} \label{eqn-1.14}
+\end{empheq}
+On pourrait faire dans ces formules $\rho=1$; mais il vaut mieux conserver l'homogénéité, ce qui permet de considérer 
+les rotations de $180^\circ$, pour lesquelles on a $\rho=0$.
+
+En introduisant la dérivée de $B$, on peut résoudre ces équations par rapport aux dérivées de $\lambda$, $\mu$, $\nu$, 
+$\rho$, ce qui donne
+\begin{empheq}[left=\empheqlbrace]{equation}
+	\begin{aligned}
+		2\dd{\lambda}{t} &= \dd{\,\log{B}}{t}\,\lambda + r\mu - q\nu - p\rho, \\
+		2\dd{\mu}{t} &= -r\lambda + \dd{\,\log{B}}{t}\mu + p\nu - q\rho, \\
+		2\dd{\nu}{t} &= \phantom{-}q\lambda - p\mu + \dd{\,\log{B}}\nu - r\rho, \\
+		2\dd{\rho}{t} &= \phantom{-}p\lambda + q\mu + r\nu + \dd{\,\log{B}}{t}\rho.
+	\end{aligned} \label{eqn-1.15}
+\end{empheq}
+
+Si les paramètres sont ceux que nous avons appelés \textit{quaternioniens} et pour lesquels on a $B=1$, le terme 
+$\dd{\,\log{B}}{t}$ devient nul, et les formules se simplifient.
 
 \textbf{2.} Tout cela étant rappelé, nous allons étudier la question suivante, qui est fondamentale dans notre théorie: 
 \textit{On donne $p$, $q$, $r$ en fonction du temps $t$, et l'on propose de déterminer complètement le mouvement.}
 
 Il est clair que la question sera résolue si l'on a les expressions des neuf cosinus en fonction du temps. Or il 
-résulte immédiatement des formules \ref{eqn-1.4} que, si l'on sépare les cosinus en trois groupes, formés 
+résulte immédiatement des formules \ref{eqn-1.10} que, si l'on sépare les cosinus en trois groupes, formés 
 respectivement de $a$, $b$, $c$; $a'$, $b'$, $c'$; $a''$, $b''$, $c''$, les trois cosinus de chaque groupe sont des  
 solutions simultanées du système
 \begin{empheq}[left=\empheqlbrace]{equation}
@@ -151,12 +240,12 @@ solutions simultanées du système
 		\frac{\d\alpha}{\d{t}} &= \beta r - \gamma q, \\
 		\frac{\d\beta}{\d{t}} &= \gamma p - \alpha r, \\
 		\frac{\d\gamma}{\d{t}} &= \alpha q - \beta p. \\
-	\end{aligned} \label{eqn-1.8}
+	\end{aligned} \label{eqn-1.16}
 \end{empheq}
 
 Toute la difficulté se réduit donc à l'intégration de ce système. L'étude détaillée de cette intégration fera l'objet 
 du Chapitre suivant. Pour le moment nous nous contenterons de signaler les propriétés suivantes du système 
-\ref{eqn-1.8}.
+\ref{eqn-1.16}.
 
 D'abord, par suite de sa forme linéaire, il admettra toujours une solution, et une seule, pour laquelle les valeurs 
 initiales de $\alpha$, $\beta$, $\gamma$ seront données.
@@ -217,7 +306,7 @@ en projetant la vitesse de cette origine sur les axes fixes,
 		\frac{\d{X_0}}{\d{t}} &= a\xi + b\eta + c\zeta, \\
 		\frac{\d{Y_0}}{\d{t}} &= a'\xi + b'\eta + c'\zeta, \\
 		\frac{\d{Z_0}}{\d{t}} &= a''\xi + b''\eta + c''\zeta.
-	\end{aligned} \label{eqn-1.9}
+	\end{aligned} \label{eqn-1.17}
 \end{empheq}
 
 Quand on aura déterminé les cosinus, ces formules feront connaître $X_0$, $Y_0$, $Z_0$ par de simples quadratures qui 
@@ -236,7 +325,7 @@ trois quantités
 		V_x = \xi + qz - ry + \frac{\d{x}}{\d{t}}, \\
 		V_y = \eta + rx - pz + \frac{\d{y}}{\d{t}}, \\
 		V_z = \zeta + py - qx + \frac{\d{z}}{\d{t}}.
-	\end{aligned} \label{eqn-1.10}
+	\end{aligned} \label{eqn-1.18}
 \end{empheq}
 
 Considérons, par exemple, les points invariablement liés au système mobile et cherchons ceux pour lesquels la vitesse 
@@ -296,7 +385,7 @@ axe fixes,
 	a = \frac{\d{x}}{\d{s}}, \quad a' = \frac{\d{y}}{\d{s}}, \quad a'' = \frac{\d{z}}{\d{t}}.
 \]
 
-Les formules générales (\ref{eqn-1.4}) nous donnent
+Les formules générales (\ref{eqn-1.10}) nous donnent
 \begin{equation}
 	\d{a} = (br - cq)\d{s}, \quad \d{b} = (cp - ar)\d{s}, \quad dc = (aq - bp)\d{s}.
 	\label{eqn-1.12}
