@@ -12,18 +12,17 @@
 \frac{\d{\gamma}}{\d{t}} &= \alpha q - \beta p,
 \end{aligned} \label{eqn-2.1}
 \end{empheq}
-auquel satisfont les trois groupes des cosinus. Nous avons déjà signalé une propriété fondamentale de ce système. Il 
-admet l'intégrale du second degré
-
-\begin{empheq}[left=\empheqlbrace]{equation}
+auquel satisfont les trois groupes de cosinus. Nous avons déjà signalé une propriété fondamentale de ce système. Il 
+admet l'intégrale quadratique
+\begin{equation}
 \begin{aligned}
-\alpha^2 + \beta^2 + \gamma^2 = \textrm{const.}
+\alpha^2 + \beta^2 + \gamma^2 = \textrm{const.,}
 \end{aligned} \label{eqn-2.2}
-\end{empheq}
-et l'existence de cette intégrale entraîne, comme corollaires, une série de propositions qui facilitent, dans plusieurs 
+\end{equation}
+et l'existence de cette intégrale entraîne comme corollaires une série de propositions qui facilitent, dans plusieurs 
 cas, l'intégration du système.
 
-Avant de commencer l'étude des équations (\ref{eqn-2.1}), je vais d'abord montrer que tout système linéaire de la forme
+Avant de commencer l'étude des équations (\ref{eqn-2.1}), je vais montrer d'abord que tout système linéaire de la forme
 \begin{empheq}[left=\empheqlbrace]{equation}
 \begin{aligned}
 \frac{\d{\alpha}}{\d{t}} &= A\alpha + B\beta + C\gamma, \\
@@ -31,32 +30,36 @@ Avant de commencer l'étude des équations (\ref{eqn-2.1}), je vais d'abord mont
 \frac{\d{\gamma}}{\d{t}} &= A''\alpha + B''\beta + C''\gamma,
 \end{aligned} \label{eqn-2.3}
 \end{empheq}
-où $A$, $B$, $C$, \dots\, sont des fonctions de $t$, peut être ramené à la forme (\ref{eqn-2.1}) toutes les fois qu'il 
-admet une intégrale du second degré
+où $A$, $B$, $C$, $A'$, \dots\, sont des fonctions de $t$, peut être ramené à la forme (\ref{eqn-2.1}) toutes les fois 
+qu'il admet une intégrale du second degré connue
 \begin{equation}
 \varphi(\alpha, \beta, \gamma) = \textrm{const.},
 \label{eqn-2.4}
 \end{equation}
-$\varphi$ désignant une fonction homogène du second degré, à coefficients constants ou variables.
+où $\varphi$ désigne une fonction homogène du second degré, à coefficients constants ou variables.
 
-En effet, par une substitution linéaire qui ne change évidement pas la forme des équations (\ref{eqn-2.3}), on peut 
-ramener l'équation (\ref{eqn-2.4}) (sauf les cas exceptionnels, que l'on traitera facilement, où la fonction $\varphi$ 
-serait un carré ou une somme de deux carrés) à la forme
+En effet, une substitution linéaire homogène quelconque ne change évidemment pas la forme des équations (\ref{eqn-2.3}) 
+et, à l'aide d'une telle substitution, on peut évidemment ramener l'équation (\ref{eqn-2.4}) à la forme
 \begin{equation}
-\alpha^2 + \beta^2 + \gamma^2 = \textrm{const.}
+\alpha^2 + \beta^2 + \gamma^2 = \textrm{const.,}
 \label{eqn-2.5}
 \end{equation}
-Si l'on exprime que le premier membre de cette équation est une intégrale du système (\ref{eqn-2.3}), on obtient les 
-équations
+en laissant de côté les cas exceptionnels, qu'on traitera aisément, où la fonction $\varphi$ serait un carré, ou une 
+somme de carrés.
+
+Si l'on exprime que le premier membre de l'équation (\ref{eqn-2.5}) est une intégrale du système (\ref{eqn-2.3}), on 
+obtient les conditions
 \[
 A = B' = C'' = B + A' = C + A'' = C' + B'' = 0,
 \]
-qui montrent bien que la système (\ref{eqn-2.3}) se ramène à la forme (\ref{eqn-2.1}).
+qui permettent de ramener ce système (\ref{eqn-2.3}) à la forme (\ref{eqn-2.1}).
 
-Le système (\ref{eqn-2.1}) nous apparaît donc comme le type ou la \textit{forme réduite} d'une classe entière de 
-systèmes présentant la propriété, que l'on rencontre fréquemment dans les applications, d'admettre une intégrale du 
-second degré. Ce caractère particulier des équations que nous allons étudier méritait d'être signalé et suffirait à 
-justifier l'étendue des développements qui vont suivre.
+Ainsi, le système (\ref{eqn-2.1}) nous apparaît comme le type, ou la \textit{forme réduite} d'une classe entière de 
+systèmes présentant la propriété, qu'on rencontre fréquemment dans les applications, d'admettre une intégrale connue du 
+second degré. Ce caractère particulier des équations que nous allons étudier méritait d'être approfondi et suffirait à 
+justifier l'étendue des développements qui vont suivre\footnote{On peut caractériser aussi le système étudié en disant 
+qu'il est identique à son système \textit{adjoint}. Voir pour la définition du système adjoint deux \textit{Notes} de 
+l'Auteur insérées en 1880 aux \textit{Comptes rendus}, t. 90, pp. 524 et 596.}.
 
 \textbf{14.} Je vais montrer d'abord que, toutes les fois que l'on connaîtra une solution particulière $(\alpha_0, 
 \beta_0, \gamma_0)$ du système (\ref{eqn-2.1}), on pourra joindre l'intégrale du première degré
